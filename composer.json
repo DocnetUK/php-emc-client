@@ -1,0 +1,17 @@
+{
+  "name": "docnet/php-emc-client",
+  "type": "library",
+  "description": "Email Campaigner API Client in PHP",
+  "keywords": ["docnet", "email campaigner", "api"],
+  "homepage": "https://github.com/DocnetUK/php-emc-client",
+  "license": "Apache-2.0",
+  "require": {
+    "php": ">=5.3.0"
+  },
+  "autoload": {
+    "classmap": [
+      "src/"
+    ]
+  },
+  "include-path": ["src/"]
+}
