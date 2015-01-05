@@ -5,6 +5,12 @@
   "keywords": ["docnet", "email campaigner", "api"],
   "homepage": "https://github.com/DocnetUK/php-emc-client",
   "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Tom Walder",
+      "email": "tom@docnet.nu"
+    }
+  ],
   "require": {
     "php": ">=5.3.0"
   },
