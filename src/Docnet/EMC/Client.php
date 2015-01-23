@@ -128,6 +128,9 @@ class Client
             )
         );
         $this->obj_response = json_decode(@file_get_contents('https://emc-five.appspot.com/api' . $str_path, FALSE, stream_context_create($arr_opts)));
+        if(!is_array($http_response_header)) {
+            throw new \Exception("HTTP POST failed");
+        }
         if (FALSE === strpos($http_response_header[0], "200")) {
             throw new \Exception("HTTP POST failed with: " . $http_response_header[0]);
         }
